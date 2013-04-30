@@ -1,0 +1,195 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+      \setlength{\topsep}{0pt}%
+      \setlength{\leftmargin}{#1}%
+      \setlength{\rightmargin}{#2}%
+      \setlength{\listparindent}{\parindent}%
+      \setlength{\itemindent}{\parindent}%
+      \setlength{\parsep}{\parskip}%
+    }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+  \begin{changemargin}{-0.05in}{-0.05in}
+    \vspace*{-8pt}
+    \hrulefill \\
+    \vspace*{-2pt}
+  \end{changemargin}
+}
+
+\newcommand{\header}[1]{
+  \begin{changemargin}{-0.5in}{-0.5in}
+    \scshape{#1}\\
+    \lineover
+  \end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+  \begin{changemargin}{-0.5in}{-0.5in}
+    \begin{center}
+      {\Large \scshape {#1}}\\ \smallskip
+      {#2}\\ \smallskip 
+      {#3}\\ \smallskip
+      {#4}\smallskip
+    \end{center}
+  \end{changemargin}
+}
+
+\newenvironment{body} {
+  \vspace*{-16pt}
+  \begin{changemargin}{-0.25in}{-0.5in}
+  }	
+  {\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+  \textbf{#1} \hfill \emph{#2\\}
+  #3\\ 
+  #4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Name
+\contact{Chenyang Yuan}{\href{mailto:yuanchenyang@gmail.com}{yuanchenyang@gmail.com}}{\url{http://www.github.com/yuanchenyang}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Education
+\header{Education}
+
+\begin{body}
+  \vspace{14pt}
+  \textbf{Double Major in Computer Science and Physics} \hfill Expected Graduation: 2016 \\
+  \emph{The University of Berkeley at California}, Berkeley, CA{} \hfill GPA: 3.94 (Technical: 4.00)\\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Skills
+\header{Technical Skills}
+
+\begin{body}
+  \vspace{14pt}
+  \begin{multicols}{2}
+    \textbf{Python} Over 3 years of experience, used this language for both small tools and large projects\\
+    \textbf{Java} Currently learning this language in class, designed and implemented data structures \\
+    \textbf{\TeX} 5 years of experience, typeset over 50 documents of various lengths\\
+    \textbf{Scheme} Written an interpreter for a subset of Scheme, have a good understanding of how it works\\
+    \textbf{Javascript} Used Javascript to create a web-based Scheme interpreter\\
+    \textbf{Emacs} I do all my text editing with a highly customized version of Emacs\\
+    \textbf{Assembly} Familiar with how CPUs work and how to program them\\
+  \end{multicols}
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Projects
+\header{Selected Projects}
+
+\begin{body}
+  \vspace{14pt}
+  \textbf{Building a Computer from Scratch} \hfill \url{https://github.com/yuanchenyang/My-EOCS}\\
+  Following the instructions from a book called the Elements of Computing Systems, I built a CPU from logic gates using a hardware simulator. Then I proceeded to create an assembler for the CPU and a VM simulator that takes in VM code (similar to java bytecode) and outputs assembly code. \\
+  \medskip
+  \textbf{Online SICP Textbook} \hfill \url{http://xuanji.appspot.com/isicp/1-1-elements.html}\\
+  Made an interactive version of the classic Structure and Interpretation of Computer Programs book with my friend. I created the multithreaded Javascript-based Scheme interpreter.\\
+  \medskip
+  \textbf{Logic Gate Simulator} \hfill \url{https://github.com/yuanchenyang/Logic-Simulator}\\
+  Used Python to create a logic gate simulation system with constraint passing. This system also allows powerful abstractions to be made so that more complicated sets of gates can be created, saved and reused. This project won an honorable mention in the Facebook Battle of the Bay hackathon.\\
+  \medskip
+  \textbf{Perfect Strategy for Hog} \hfill \url{https://github.com/yuanchenyang/Hog-Perfect-Strategy}\\
+  For a project in my CS class, we have to create artificial intelligence agents to compete in a dice game called Hog. I used dynamic programming and recursion to create a prefect strategy that cannot be beaten, thereby winning the contest. \\
+  \medskip  
+\end{body}
+
+\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Work
+\header{Work Experience}
+
+\begin{body}
+  \vspace{14pt}
+  \textbf{CS61A Reader}, \emph{UC Berkeley} \hfill \emph{Spring 2013}\\
+  \vspace*{-4pt}
+  \begin{itemize} \itemsep -0pt  % reduce space between items
+  \item Reader for the class Structure and Interpretation of Computer Programs
+  \item Provided feedback and comments for students' code
+  \item Held debugging sessions
+  \end{itemize}
+  % \textbf{Math Competition Trainer}, \emph{National University of Singapore High School} \hfill \emph{March 2012}\\
+  % \vspace*{-4pt}
+  % \begin{itemize} \itemsep -0pt  % reduce space between items
+  % \item Compile problems and create training notes 
+  % \item Conduct classes for grade 8-10 students
+  % \end{itemize}
+  % \textbf{Physics Competition Trainer}, \emph{National University of Singapore High School} \hfill \emph{March-August 2012}\\
+  % \vspace*{-4pt}
+  % \begin{itemize} \itemsep -0pt  % reduce space between items
+  % \item Prepare PhD-qualifying exam level problems
+  % \item Conduct classes for grade 11 students
+  % \item Create and grade a test
+  % \end{itemize}
+\end{body}
+
+\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Awards and Honors
+\header{Relevant Awards}
+
+\begin{body}
+  \vspace{14pt}
+  \textbf{First Place}, Cal vs Stanford Big Hack \hfill{} \emph{Apr 2013}\\
+  \textbf{Honorable Mention}, Facebook Battle of the Bay Hackathon 2012 \hfill{} \emph{Oct 2012}\\
+  \textbf{Rank 15}, Hacker Rank Back to School Hackathon 2013 \hfill{} \emph{Feb 2013}\\  
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Coursework
+\header{Relevant Coursework}
+
+\begin{body}
+  \vspace{14pt}
+  \textbf{CS61A}, Structure and Interpretation of Computer Programs \hfill {} \emph{Fall 2012}\\
+  Introductory computed science class, ranked 3rd out of about 700 students.\\
+  \medskip
+  \textbf{CS61B}, Data Structures and Algorithms \hfill {} \emph{Spring 2013 (in progress)}\\
+  \medskip
+  \textbf{EECS70}, Discrete Mathematics and Probability Theory \hfill {} \emph{Spring 2013 (in progress)}
+\end{body}
+\end{document}
