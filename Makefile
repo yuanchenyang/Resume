@@ -1,5 +1,5 @@
 tex = pdflatex
-file = resume1
+file = resume
 flags = --file-line-error --synctex=1
 compile-command = $(tex) $(flags) $(file).tex
 
