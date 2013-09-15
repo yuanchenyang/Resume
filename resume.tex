@@ -50,7 +50,7 @@
   \begin{changemargin}{-0.5in}{-0.5in}
     \begin{center}
       {\Large \scshape {#1}}\\ \smallskip
-      {#2}\\ \smallskip 
+      {#2}\\ \smallskip
       {#3}\\ \smallskip
       {#4}\smallskip
     \end{center}
@@ -60,13 +60,13 @@
 \newenvironment{body} {
   \vspace*{-16pt}
   \begin{changemargin}{-0.25in}{-0.5in}
-  }	
+  }
   {\end{changemargin}
-}	
+}
 
 \newcommand{\school}[4]{
   \textbf{#1} \hfill \emph{#2\\}
-  #3\\ 
+  #3\\
   #4\\
 }
 
@@ -74,61 +74,30 @@
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
 \contact{Chenyang Yuan}{\href{mailto:yuanchenyang@gmail.com}{yuanchenyang@gmail.com}}{\url{http://www.github.com/yuanchenyang}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
 \header{Education}
 
 \begin{body}
   \vspace{14pt}
   \textbf{Double Major in Computer Science and Physics} \hfill Expected Graduation: 2016 \\
-  \emph{The University of Berkeley at California}, Berkeley, CA{} \hfill GPA: 3.94 (Technical: 4.00)\\
+  \emph{The University of Berkeley at California}, Berkeley, CA{} \hfill GPA: 3.967 (Technical: 4.00)\\
 \end{body}
 
 \smallskip
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Skills
 \header{Technical Skills}
 
 \begin{body}
   \vspace{14pt}
-  \begin{multicols}{2}
-    \textbf{Python} $\sim 500$ hours, used this language for both small tools and large projects\\
-    \textbf{Java} $\sim 100$ hours, designed and implemented data structures for class projects \\
-    \textbf{\TeX} $\sim 500$ hours, used \LaTeX to typeset documents since high school \\
-    \textbf{Scheme} $\sim 50$ hours, written multiple interpreters for a subset of Scheme, have a good understanding of how it works\\
-    \textbf{Javascript} $\sim 50$ hours, used Javascript to create a web-based Scheme interpreter\\
-    \textbf{C} $\sim 100$ hours, wrote programs and compiled them for my graphing
-    calculator\\
-    \textbf{Assembly} $\sim 50$ hours, familiar with how CPUs work and how to program them\\
-    \textbf{Emacs} I do all my text editing with a highly customized version of Emacs\\
-  \end{multicols}
-\end{body}
-
-\smallskip
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% Projects
-\header{Selected Projects}
-
-\begin{body}
-  \vspace{14pt}
-  \textbf{Building a Computer from Scratch} \hfill \url{https://github.com/yuanchenyang/My-EOCS}\\
-  Following the instructions from a book called the Elements of Computing Systems, I built a CPU from logic gates using a hardware simulator. Then I proceeded to create an assembler for the CPU and a VM simulator that takes in VM code (similar to java bytecode) and outputs assembly code. \\
-  \medskip
-  \textbf{Online SICP Textbook} \hfill \url{http://xuanji.appspot.com/isicp/1-1-elements.html}\\
-  Made an interactive version of the classic Structure and Interpretation of Computer Programs book with my friend. I created the multithreaded Javascript-based Scheme interpreter.\\
-  \medskip
-  \textbf{Logic Gate Simulator} \hfill \url{https://github.com/yuanchenyang/Logic-Simulator}\\
-  Used Python to create a logic gate simulation system with constraint passing. This system also allows powerful abstractions to be made so that more complicated sets of gates can be created, saved and reused. This project won an honorable mention in the Facebook Battle of the Bay hackathon.\\
-  \medskip
-  \textbf{Perfect Strategy for Hog} \hfill \url{https://github.com/yuanchenyang/Hog-Perfect-Strategy}\\
-  For a project in my CS class, we have to create artificial intelligence agents to compete in a dice game called Hog. I used dynamic programming and recursion to create a prefect strategy that cannot be beaten, thereby winning the contest. \\
-  \medskip  
+  \textbf{Proficient in} Python, Javascript, Emacs, HTML, jQuery, Java, \LaTeX \\
+  \textbf{Experience in} C, Scheme, Haskell, SQL, Android, Assembly
 \end{body}
 
 \smallskip
@@ -136,25 +105,40 @@
 % \newpage{} % uncomment this line if you want to force a new page
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Work
 \header{Work Experience}
 
 \begin{body}
   \vspace{14pt}
-  \textbf{CS61A Reader}, \emph{UC Berkeley} \hfill \emph{Spring 2013}\\
+  \textbf{Undergraduate Student Instructor for CS61A}, \emph{UC Berkeley} \hfill \emph{Fall 2013 -- Present}\\
   \vspace*{-4pt}
   \begin{itemize} \itemsep -0pt  % reduce space between items
-  \item Reader for the class Structure and Interpretation of Computer Programs
-  \item Provided feedback and comments for students' code
-  \item Held debugging sessions
+  \item I teach sections, prepare discussion notes and labs, help write the
+    autograder for projects and hold office hours.
   \end{itemize}
+
+  \textbf{Software Engineering Intern}, \emph{Clover} \hfill \emph{July--August 2013}\\
+  \vspace*{-4pt}
+  \begin{itemize} \itemsep -0pt  % reduce space between items
+  \item Helped improve internal tools
+  \item Built an API auto-documentation system; designed and build an API Explorer: \url{https://www.clover.com/api_explorer}
+  \item Created demo app using Clover's API: \url{https://github.com/clover/example-server}
+  \end{itemize}
+
+  \textbf{Reader for CS61A}, \emph{UC Berkeley} \hfill \emph{Spring 2013}\\
+  \vspace*{-4pt}
+  \begin{itemize} \itemsep -0pt  % reduce space between items
+  \item I provided feedback and comments for students' code and held debugging sessions
+  \end{itemize}
+
   % \textbf{Math Competition Trainer}, \emph{National University of Singapore High School} \hfill \emph{March 2012}\\
   % \vspace*{-4pt}
   % \begin{itemize} \itemsep -0pt  % reduce space between items
-  % \item Compile problems and create training notes 
+  % \item Compile problems and create training notes
   % \item Conduct classes for grade 8-10 students
   % \end{itemize}
+
   % \textbf{Physics Competition Trainer}, \emph{National University of Singapore High School} \hfill \emph{March-August 2012}\\
   % \vspace*{-4pt}
   % \begin{itemize} \itemsep -0pt  % reduce space between items
@@ -166,32 +150,69 @@
 
 \smallskip
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Projects
+\header{Selected Projects}
+
+\begin{body}
+  \vspace{14pt}
+
+  \textbf{Facebook Group Archiver} \hfill \url{https://github.com/yuanchenyang/facebook-group-archiver}\\
+  A tool for saving Facebook groups in a local database and doing comprehensive searches locally. After the first download, it will sync the local database with the Facebook group during each run. Also includes a web-interface for stats, searching and doing database queries. \\
+  \medskip
+
+  \textbf{Interactive SICP Textbook} \hfill \url{http://xuanji.appspot.com/isicp/1-1-elements.html}\\
+  Made an interactive version of the classic Structure and Interpretation of Computer Programs book with my friend. I created the asynchronous Javascript-based Scheme interpreter used on the website.\\
+  \medskip
+
+  \textbf{Scheme on TI-89} \hfill \url{https://github.com/yuanchenyang/TI89-Scheme}\\
+  Built a Scheme interpreter from scratch that runs on my TI-89 graphing calculator. It is written in C and supports a small subset of the Scheme language.\\
+  \medskip
+
+  \textbf{Logic Gate Simulator} \hfill \url{https://github.com/yuanchenyang/Logic-Simulator}\\
+  Used Python to create a logic gate simulation system with constraint passing. This system also allows powerful abstractions to be made so that more complicated sets of gates can be created, saved and reused. This project won an honorable mention in the Facebook Battle of the Bay hackathon.\\
+  \medskip
+
+  \textbf{Building a Computer from Scratch} \hfill \url{https://github.com/yuanchenyang/My-EOCS}\\
+  Following the instructions from a book called the Elements of Computing Systems, I built a CPU from logic gates using a hardware simulator. Then I proceeded to create an assembler for the CPU and a VM simulator that takes in VM code (similar to java bytecode) and outputs assembly code. \\
+  \medskip
+
+  % \textbf{Perfect Strategy for Hog} \hfill \url{https://github.com/yuanchenyang/Hog-Perfect-Strategy}\\
+  % For a project in my CS class, we have to create artificial intelligence agents to compete in a dice game called Hog. I used dynamic programming and recursion to create a prefect strategy that cannot be beaten, thereby winning the contest. \\
+  % \medskip
+\end{body}
+
+\smallskip
+
 % \newpage{} % uncomment this line if you want to force a new page
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Awards and Honors
 \header{Relevant Awards}
 
 \begin{body}
   \vspace{14pt}
   \textbf{First Place}, Cal vs Stanford Big Hack \hfill{} \emph{Apr 2013}\\
+  Created a scheme interpreter in C on my TI-89 graphing calculator \\
+  \textbf{Third Place}, Hackers at Berkeley HackJam \hfill{} \emph{Apr 2013}\\
+  Made an animation sequence on my TI-89 graphing calculator \\
   \textbf{Honorable Mention}, Facebook Battle of the Bay Hackathon 2012 \hfill{} \emph{Oct 2012}\\
-  \textbf{Rank 15}, Hacker Rank Back to School Hackathon 2013 \hfill{} \emph{Feb 2013}\\  
+  Build a logic gate simulator with a graphical interface in Python. \\
+  \textbf{Rank 15}, Hackerrank Back to School Hackathon 2013 \hfill{} \emph{Feb 2013}\\
 \end{body}
 
 \smallskip
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Coursework
-\header{Relevant Coursework}
+% \header{Relevant Coursework}
 
-\begin{body}
-  \vspace{14pt}
-  \textbf{CS61A}, Structure and Interpretation of Computer Programs \hfill {} \emph{Fall 2012}\\
-  Introductory computed science class, ranked 3rd out of about 700 students.\\
-  \medskip
-  \textbf{CS61B}, Data Structures and Algorithms \hfill {} \emph{Spring 2013 (in progress)}\\
-  \medskip
-  \textbf{EECS70}, Discrete Mathematics and Probability Theory \hfill {} \emph{Spring 2013 (in progress)}
-\end{body}
+% \begin{body}
+%   \vspace{14pt}
+%   \textbf{CS61A}, Structure and Interpretation of Computer Programs \hfill {} \emph{Fall 2012}\\
+%   \medskip
+%   \textbf{CS61B}, Data Structures and Algorithms \hfill {} \emph{Spring 2013}\\
+%   \medskip
+%   \textbf{EECS70}, Discrete Mathematics and Probability Theory \hfill {} \emph{Spring 2013}
+% \end{body}
 \end{document}
