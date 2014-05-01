@@ -27,6 +27,9 @@
 \#*\#
 /auto/*
 
+# python specific
+.ropeproject
+
 # OS generated files #
 ######################
 .DS_Store*
@@ -40,4 +43,3 @@ Thumbs.db
 *.DS_Store
 *.swp
 *.out
-
