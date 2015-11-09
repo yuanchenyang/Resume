@@ -46,13 +46,11 @@
   \end{changemargin}
 }
 
-\newcommand{\contact}[4]{
+\newcommand{\contact}[2]{
   \begin{changemargin}{-0.5in}{-0.5in}
     \begin{center}
       {\Large \scshape {#1}}\\ \smallskip
       {#2}\\ \smallskip
-      {#3}\\ \smallskip
-      {#4}\smallskip
     \end{center}
   \end{changemargin}
 }
@@ -76,7 +74,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
-\contact{Chenyang Yuan}{\href{mailto:yuanchenyang@gmail.com}{yuanchenyang@gmail.com}}{ \url{http://www.github.com/yuanchenyang} \quad \url{http://www.chenyang.co}}
+\contact{Chenyang Yuan}{\url{yuanchenyang@gmail.com}  \quad \url{http://www.github.com/yuanchenyang} \quad \url{http://www.chenyang.co}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
@@ -96,8 +94,8 @@
 
 \begin{body}
   \vspace{14pt}
-  \textbf{Proficient in} Python, Haskell, Javascript, Java,  C, \LaTeX, Emacs, Git \\
-  \textbf{Experience in} Rust, Scheme, jQuery, d3, HTML, Hadoop, Android, SQL, Assembly
+  \textbf{Proficient in} Python, Javascript, \LaTeX, Emacs, Git \\
+  \textbf{Experience in} Haskell, Rust, Scheme, Java, C, jQuery, d3, HTML, Hadoop, Android, SQL, Assembly
 \end{body}
 
 \smallskip
@@ -107,39 +105,43 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Work
-\header{Work Experience}
+\header{Research/Teaching/Work Experience}
 
 \begin{body}
   \vspace{14pt}
 
-  \textbf{Undergraduate Student Researcher}, \emph{UC Berkeley} \hfill \emph{Spring 2015 -- Present}\\
-  \vspace*{-4pt}
+  \textbf{Undergraduate Student Researcher (Prof Alex Bayen)}, \emph{UC Berkeley} \hfill \emph{Spring 2015 -- Present}\\
+  \vspace*{-5pt}
   \begin{itemize} \itemsep -0pt  % reduce space between items
-  \item I work on traffic research with Professor Alex Bayen. One project I'm
-    working on is inferring route flows of cars from cellular connection
-    data. Another project I'm working on involves using queueing theory to
-    investigate possible attacks on on-demand taxi networks by calling taxies
-    and then canceling the calls.
+  \item Helped develop and implement algorithms for inferring route flows of
+    traffic from cellular data.
+  \item Used queueing theory to develop a model for investigating attacks on
+    mobility as a service systems, formulated and solved for optimal attacks,
+    and ran experiments using a dataset of 1B NYC taxi trips.
+  \item Studied the effects of real-time routing services on traffic with a
+    routing game framework.
   \end{itemize}
 
-  \textbf{Undergraduate Student Researcher}, \emph{UC Berkeley} \hfill \emph{Spring 2014 -- Fall 2014}\\
-  \vspace*{-4pt}
+  \textbf{Undergraduate Student Researcher (Prof Ras Bodik)}, \emph{UC Berkeley} \hfill \emph{Spring 2014 -- Fall 2014}\\
+  \vspace*{-5pt}
   \begin{itemize} \itemsep -0pt  % reduce space between items
-  \item I worked with Professor Ras Bodik on the synthesis of a layout engine
-    for an experimental browser, Servo. I helped built a backend which generates
-    a layout engine in Rust, which replaces the hand-written layout engine in
-    Servo.
+  \item Helped built a compiler which synthesizes a layout engine in Rust from a
+    CSS specification, which replaces the hand-written layout engine in the
+    experimental browser Servo.
   \end{itemize}
 
-  \textbf{TA for Discrete Math and Probability}, \emph{UC Berkeley} \hfill \emph{Spring 2015}\\
-
-  \textbf{TA for Structure and Interpretation of Computer Programs}, \emph{UC Berkeley} \hfill \emph{Fall 2013 -- Fall 2014}\\
+  \textbf{Undergraduate Student Instructor}, \emph{UC Berkeley} \hfill \emph{Fall 2013 -- Fall 2015}\\
+  \vspace*{-5pt}
+  \begin{itemize} \itemsep -0pt  % reduce space between items
+  \item 3 semesters of Structure and Interpretation of Computer Programs, 1
+    semester of Discrete Math and Probability and 1 semester of Designing
+    Information Devices and Systems.
+  \end{itemize}
 
   \textbf{Software Engineering Intern}, \emph{Clover} \hfill \emph{July--August 2013}\\
-  \vspace*{-4pt}
+  \vspace*{-5pt}
   \begin{itemize} \itemsep -0pt  % reduce space between items
-  \item Built an API auto-documentation system; designed and build an API Explorer
-  \item Created demo app using Clover's API:  \url{https://github.com/clover/example-server}
+  \item Amongst other projects, designed and built an API auto-documentation system and API Explorer.
   \end{itemize}
 \end{body}
 
@@ -147,7 +149,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Projects
-\header{Selected Projects}
+\header{Programming Projects}
 
 \begin{body}
   \vspace{14pt}
@@ -155,10 +157,9 @@
   \textbf{Linear Algrbra DSL} \hfill \url{https://github.com/yuanchenyang/llvm-linear-algebra-dsl} \\
   An open-ended project for a compilers class. First created a set of tools for
   building domain specific languages (DSLs) using LLVM for code generation and
-  created a DSL for linear algebra operations introducing lots of
-  domain-specific optimizations. Then implemented an edge detector and part of
-  an optical flow estimation algorithm using the DSL.
-  \medskip
+  created a DSL for linear algebra operations with domain-specific
+  optimizations. Then implemented an edge detector and an optical flow
+  estimation algorithm using the DSL.  \medskip
 
   \textbf{Facebook Group Archiver} \hfill \url{http://archiver.chenyang.co}\\
   A tool for saving Facebook groups in a local database and doing comprehensive
@@ -194,7 +195,7 @@
   \textbf{First Place}, Cal vs Stanford Big Hack \hfill{} \emph{2013}\\
   Created a scheme interpreter in C on my TI-89 graphing calculator \\
   \textbf{Honorable Mention}, 12th Asian Physics Olympiad \hfill{} \emph{2011}\\
-  One of the 8 students representing Singapore in this competition.\\
+  One of the 8 students selected to represent Singapore in this competition.\\
 \end{body}
 
 \smallskip
@@ -204,9 +205,9 @@
 \header{Selected Coursework}
 \begin{body}
   \vspace{14pt}
-  \textbf{CS:} Graduate Algorithms and Theory, Compilers, Security, AI, Randomized Algorithms \\
+  \textbf{EECS:} Information Theory, Cryptography, Graduate Algorithms and Theory, Compilers, Security, AI, Randomized Algorithms \\
   \medskip
-  \textbf{Math:} Complex Analysis, Honors Abstract Algebra (mainly covering category theory) \\
+  \textbf{Math:} Complex Analysis, Honors Abstract Algebra (introduction to category theory) \\
   \medskip
   \textbf{Physics:} Analytical Mechanics, Quantum Mechanics, General Relativity, Electronics Lab \\
   \medskip
