@@ -1,12 +1,12 @@
 Chenyang Yuan
 yuanchenyang@gmail.com
 http://www.github.com/yuanchenyang
-Expected Graduation: 2016 
+Expected Graduation: 2016
 GPA: 3.94 (Technical: 4.00)
 
 Education
 Double Major in Computer Science and Physics
-The University of Berkeley at California, Berkeley, CA 
+The University of Berkeley at California, Berkeley, CA
 
 Technical Skills
 • Python: Over 3 years of experience, used this language for both small tools and large projects Java Currently learning this language in class, designed and implemented data structures
@@ -19,13 +19,13 @@ Selected Projects
 • Building a Computer from Scratch https://github.com/yuanchenyang/My-EOCS
 Following the instructions from a book called the Elements of Computing Systems, I built a CPU from logic gates using a hardware simulator. Then I proceeded to create an assembler for the CPU and a VM simulator that takes in VM code (similar to java bytecode) and outputs assembly code.
 
-• Online SICP Textbook http://xuanji.appspot.com/isicp/1-1-elements.html 
+• Online SICP Textbook http://xuanji.appspot.com/isicp/1-1-elements.html
 Made an interactive version of the classic Structure and Interpretation of Computer Programs book with my friend. I created the multithreaded Javascript-based Scheme interpreter.
 
-• Logic Gate Simulator https://github.com/yuanchenyang/Logic-Simulator 
+• Logic Gate Simulator https://github.com/yuanchenyang/Logic-Simulator
 Used Python to create a logic gate simulation system with constraint passing. This system also allows powerful abstractions to be made so that more complicated sets of gates can be created, saved and reused. This project won an honorable mention in the Facebook Battle of the Bay hackathon.
 
-• Perfect Strategy for Hog https://github.com/yuanchenyang/Hog-Perfect-Strategy 
+• Perfect Strategy for Hog https://github.com/yuanchenyang/Hog-Perfect-Strategy
 For a project in my CS class, we have to create artificial intelligence agents to compete in a dice game called Hog. I used dynamic programming and recursion to create a prefect strategy that cannot be beaten, thereby winning the contest.
 
 Work Experience
@@ -34,7 +34,7 @@ CS61A Reader, UC Berkeley
 • Grade homework and exams
 
 Relevant Awards
-• Honorable Mention, Facebook Battle of the Bay Hackathon 2012 
+• Honorable Mention, Facebook Battle of the Bay Hackathon 2012
 • Rank 15, Hacker Rank Back to School Hackathon 2013
 
 Relevant Coursework
@@ -42,3 +42,38 @@ Relevant Coursework
 Introductory computed science class, ranked 3rd out of about 700 students.
 • CS61B, Data Structures and Algorithms Spring 2013 (in progress)
 • EECS70, Discrete Mathematics and Probability Theory Spring 2013 (in progress)
+
+
+Honors and Awards:
+- EECS Honors: Joined Berkeley's EECS Honors program (2014)
+- First Place: Cal vs Stanford Big Hack (2013)
+- Honorable Mention: 12th Asian Physics Olympiad (2011). One of the 8 students selected to represent Singapore in this competition.
+- Silver Medal: Singapore Physics Olympiad (2010). Top 20 students in Singapore in physics.
+
+Publications:
+- C. Yuan, J. Thai, A. Bayen, "ZUbers against ZLyfts Apocalypse: An Analysis Framework for DoS Attacks on Mobility-as-a-Service Systems", Submitted Oct 2015, ACM/IEEE International Conference on Cyber-Physical Systems, http://www.chenyang.co/ICCPS16_submission.pdf
+- J. Thai, C. Yuan, A. Bayen, "Resiliency of Mobility-as-a-Service Systems to Denial-of-Service Attacks", Submitted Dec 2015, IEEE Transactions on Control of Network Systems, http://www.chenyang.co/IEEE_TNCS_submission.pdf
+
+Teaching:
+* Structure and Interpretation of Computer Programs, John Denero, Paul Hilfinger, (Fall 2013, Spring 2014, Fall 2014)
+  - Besides teaching discussion sections, labs and holding office hours, I participated in building infrastructure for the class such as autograder and website development, as well as content development such as creating labs, homeworks and project questions.
+
+* Discrete Math and Probability, Umesh Vazirani, (Spring 2015)
+  - I taught discussions and was on the content team responsible for creating homeworks, discussion worksheets and solutions.
+
+* Designing Information Devices and Systems, Anant Sahai and Ali Niknejad (Fall 2015)
+  - I taught a discussion section and participated heavily in content development, creating homework and discussion questions. I also helped to write numerous lecture notes from scratch.
+
+Research Projects:
+
+* Synthesis of a Layout Engine (Advisor: Ras Bodik) Spring 2014 -- Fall 2014
+  - Helped built a compiler which synthesizes a layout engine in Rust from a CSS specification, which replaces the hand-written layout engine in the experimental browser Servo.
+
+* Attacks on Mobility as a Service Networks (Advisor: Alex Bayen) Summer 2015 -- Fall 2015
+  - Used queueing theory to develop a model for investigating attacks on mobility as a service systems, formulated and solved for optimal attacks, and ran experiments using a dataset of 1B NYC taxi trips.
+
+* Locality-Sensitive Hashing for Matching Paths (Advisors: Alexei Pozdnoukhov, Alex Bayen) Spring 2015 -- Present
+  - Construct and analyze locality-sensitive hashing schemes to match two paths in Euclidean space. This has applications for transportation researchers, who wants to group together GPS traces of people taking the same route.
+
+* Quantifying Impact of Routing Services (Advisors: Alexei Pozdnoukhov, Alex Bayen) Fall 2015 -- Present
+  - Studied the effects of real-time routing services on traffic networks with a routing game framework.
