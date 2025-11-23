@@ -1,16 +1,16 @@
-tex = pdflatex
-file = resume
-flags = --file-line-error --synctex=1
-compile-command = $(tex) $(flags) $(file).tex
+files = resume.tex
+figures =
+bibfile =
 
-all: once
+output = $(files:.tex=.pdf)
 
-once: $(file).tex
-	$(compile-command)
+all: $(output)
 
-twice: $(file).tex
-	$(compile-command)
-	$(compile-command)
+%.pdf: %.tex $(styfiles) $(bibfile) $(figures)
+	rubber --pdf --synctex $*
 
 clean:
-	$(RM) *.aux *.toc *.log *.out
+	echo $(files) | xargs -n 1 rubber --clean
+
+watch:  ## Recompile on updates to the source files
+	while true; do inotifywait -e modify $(files) ; sleep 0.01 ; make all ; done
